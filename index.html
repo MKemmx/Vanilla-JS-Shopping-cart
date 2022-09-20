@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping Cart Javascript</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Shopping Cart With Vanilla JS</h1>
+    </div>
+
+    <div class="container">
+      <div class="product-container">
+        <div id="1" class="card">
+          <img
+            height="100px"
+            width="150px"
+            src="https://resource.logitech.com/w_593,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/video-conferencing/h111/h111-intro.png?v=1"
+            alt=""
+          />
+          <div class="card-details">
+            <h3>Name: <span class="card-name"> Headset </span></h3>
+            <h3>Price: <span class="card-price"> 500 </span></h3>
+            <button class="card-btns">Add To Cart</button>
+          </div>
+        </div>
+        <div id="2" class="card">
+          <img
+            height="100px"
+            width="150px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQqMy1VsUT3KmoV21I-t-saESWItNAhQN6ZttKK14&s                "
+            alt=""
+          />
+          <div class="card-details">
+            <h3>Name: <span class="card-name"> Phone </span></h3>
+            <h3>Price: <span class="card-price"> 1000 </span></h3>
+            <button class="card-btns">Add To Cart</button>
+          </div>
+        </div>
+        <div id="3" class="card">
+          <img
+            height="100px"
+            width="150px"
+            src="https://media.istockphoto.com/photos/front-view-of-modern-laptop-picture-id171313585?k=20&m=171313585&s=170667a&w=0&h=DLJJpyEs1T9YikkQ8VBxNXQDJVtyRQgP7FfHF_A_N7c="
+            alt=""
+          />
+          <div class="card-details">
+            <h3>Name: <span class="card-name"> Laptop </span></h3>
+            <h3>Price: <span class="card-price"> 2500 </span></h3>
+            <button class="card-btns">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Cart -->
+      <div class="cart-container">
+        <h1>Cart Items</h1>
+
+        <!-- Cart ITEMS -->
+        <div id="cart-details" class="cart-details"></div>
+        <div id="total" class="total">
+          <h3>Total Cart Price</h3>
+          <p id="totalValue"></p>
+        </div>
+
+        <div class="check-out-container">
+          <button id="checkOutBtn" class="proceed-btn">
+            Proceed Check Out
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
